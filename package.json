@@ -1,0 +1,26 @@
+{
+  "name": "puppeteer-papago-scraping",
+  "version": "1.0.0",
+  "description": "puppeteer-papago-scraping is a tool to get Papago translations by scraping using puppeteer without using the Papago API.",
+  "keywords": [
+    "papgo",
+    "puppeteer",
+    "scraping"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wdl/puppeteer-papago-scraping.git"
+  },
+  "author": "sijongyeoil <sijongyeoil@gmail.com>",
+  "homepage": "https://github.com/wdl/puppeteer-papago-scraping",
+  "bugs": {
+    "url": "https://github.com/wdl/puppeteer-papago-scraping/issues",
+    "email": "sijongyeoil@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "html-to-text": "^5.1.1",
+    "puppeteer": "^5.2.1"
+  }
+}
