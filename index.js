@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const htmlToText = require('html-to-text');
 
 module.exports = async (sk, tk, text) => {
-    const textEncoded = encodeURI(text)
+    const textEncoded = encodeURI(text.replace(/&/g, '%amp'))
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto(`https://papago.naver.com/?sk=${sk}&tk=${tk}&st=${textEncoded}`)
