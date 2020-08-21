@@ -1,6 +1,6 @@
 {
   "name": "puppeteer-papago-scraping",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "puppeteer-papago-scraping is a tool to get Papago translations by scraping using puppeteer without using the Papago API.",
   "keywords": [
     "papgo",
