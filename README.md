@@ -1,6 +1,6 @@
 # puppeteer-papago-scraping
 
-puppeteer-papago-scraping is a tool to get Papago translations by scraping using puppeteer without using the Papago API.
+puppeteer-papago-scraping is a tool that scraps Papago translation results using [Puppeteer](https://github.com/puppeteer/puppeteer) without using the Papago API.
 
 ## Install
 
@@ -14,14 +14,56 @@ Simply import the package and use it as a function:
 
 ```javascript
 const translate = require('puppeteer-papago-scraping')
-const text = await translate('ja', 'ko', 'みかんが 見っかんない。')
+const text = await translate('みかんが 見っかんない。', 'ko', 'ja')
 ```
+
+## API
+
+### translate(text, to[, from])
+
+#### text
+
+Type: `string`
+
+The text to be translated. Maximum 5,000 characters.
+
+#### to
+
+Type: `string`
+
+The language in which the text should be translated. Must be one of the codes from the supported languages list below.
+
+##### from
+
+Type: `string` Default: `auto`
+
+The text language. Detects language if not given. If provided, must be one of the codes from the supported languages list below.
+
+## Supported languages
+
+|Language|Code|
+|:---|:---|
+|Korean|ko|
+|English|en|
+|Japanese|ja|
+|Chinese Simplified|zh-CN|
+|Chinese Traditional|zh-TW|
+|Spanish|es|
+|French|fr|
+|German|de|
+|Russian|ru|
+|Portuguese|pt|
+|Italian|it|
+|Vietnamese|vi|
+|Thai|th|
+|Indonesian|id|
+|Hindi|hi|
 
 ## License
 
 MIT License
 
-Copyright (c) 2020 Elenchus(sijongyeoil)
+Copyright (c) 2020-present Elenchus(sijongyeoil)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
