@@ -14,7 +14,8 @@ Simply import the package and use it as a function:
 
 ```javascript
 const translate = require('puppeteer-papago-scraping')
-const text = await translate('みかんが 見っかんない。', 'ko', 'ja')
+const translatedText = await translate('みかんが 見っかんない。', 'ko', 'ja')
+const translatedTextArray = await translate(['女の子が憧れてきた魔法', 'フシギは常識 超異世界', '唱えたらショウタイム'], 'ko', 'ja')
 ```
 
 ## API
@@ -23,9 +24,9 @@ const text = await translate('みかんが 見っかんない。', 'ko', 'ja')
 
 #### text
 
-Type: `string`
+Type: `string` | `array`
 
-The text to be translated. Maximum 5,000 characters.
+The text to be translated. Maximum 5,000 characters per text.
 
 #### to
 
